@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """Defines a function pascal_triangle"""
-from math import comb
 
 
 def pascal_triangle(n):
@@ -14,11 +13,10 @@ def pascal_triangle(n):
     """
     if n <= 0:
         return []
-    triangle = [[1],]
-    if n > 1:
-        for i in range(1, n):  # optimization can be possible
-            row = []
-            for j in range(i + 1):
-                row.append(comb(i, j))
-            triangle.append(row)
+    triangle = []
+    for i in range(n):  # optimization can be possible
+        row = [1] * (i + 1)
+        for j in range(1, i):
+            row[j] = triangle[i - 1][j - 1] + triangle[i - 1][j]
+        triangle.append(row)
     return triangle
