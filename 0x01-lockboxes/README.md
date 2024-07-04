@@ -1,0 +1,46 @@
+# 0x01. Lockboxes
+
+Second technical question:
+
+__You have n number of locked boxes in front of you. Each box is numbered sequentially from 0 to n - 1 and each box may contain keys to the other boxes.__
+
+__Write a method that determines if all the boxes can be opened.__
+
+- Prototype: def canUnlockAll(boxes)
+- boxes is a list of lists
+- A key with the same number as a box opens that box
+- You can assume all keys will be positive integers
+- There can be keys that do not have boxes
+- The first box boxes[0] is unlocked
+- Return True if all boxes can be opened, else return False.
+
+______________________________________________
+
+## Must Know
+For this project, you will need a solid understanding of several key concepts in order to develop a solution that can efficiently determine if all boxes can be opened. Here’s a list of concepts and resources that will be instrumental in tackling this project:
+
+__Concepts Needed:__
+1. Lists and List Manipulation:
+
+- Understanding how to work with lists, including accessing elements, iterating over lists, and modifying lists dynamically.
+- Python Lists (Python Official Documentation)
+2. Graph Theory Basics:
+
+- Although not explicitly required, knowledge of graph theory (especially concepts related to traversal algorithms like Depth-First Search or Breadth-First Search) can be very helpful in solving this problem, as the boxes and keys can be thought of as nodes and edges in a graph.
+- Graph Theory (Khan Academy)
+2. Algorithmic Complexity:
+
+- Understanding the time and space complexity of your solution is important, as it can help in writing more efficient algorithms.
+- Big O Notation (GeeksforGeeks)
+3. Recursion:
+
+- Some solutions might require a recursive approach to traverse through the boxes and keys.
+- Recursion in Python (Real Python)
+4. Queue and Stack:
+
+- Knowing how to use queues and stacks is crucial if implementing a breadth-first search (BFS) or depth-first search (DFS) algorithm to traverse through the keys and boxes.
+- Python Queue and Stack (GeeksforGeeks)
+5. Set Operations:
+
+- Understanding how to use sets for keeping track of visited boxes and available keys can optimize the search process.
+- Python Sets (Python Official Documentation)
