@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""A module to solve lockedboxes problem"""
+
 
 def canUnlockAll(boxes):
     """determines if all the boxes can be opened
