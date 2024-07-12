@@ -18,6 +18,6 @@ def minOperations(n):
         dp[i] = float('inf')
         for j in range(1, i // 2 + 1):
             if i % j == 0:
-                dp[i] = min(dp[j], dp[j] + i // j)
+                dp[i] = min(dp[i], dp[j] + i // j)
 
     return dp[n]
