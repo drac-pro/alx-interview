@@ -3,7 +3,7 @@
 
 
 def minOperations(n):
-    """calculates the fewest number of operations needed to result in exactly 
+    """calculates the fewest number of operations needed to result in exactly
     n H characters in the file.
     Args:
         n(int): number of times the char 'H' must appear in the text file
