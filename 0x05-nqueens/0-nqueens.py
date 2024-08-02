@@ -34,7 +34,13 @@ class NQueens:
                 if not (col in used_col or (row - col) in used_diagonals or
                         (row + col) in used_antidiagonals):
                     used_col.add(col)
+
+                    # For any cell (r, c) on a main diagonal,
+                    # the difference r - c is a constant
                     used_diagonals.add(row - col)
+
+                    # For any cell (r, c) on a anti-diagonal,
+                    # the difference r + c is a constant
                     used_antidiagonals.add(row + col)
                     board[row][col] = 1
                     backtrack(row + 1)
