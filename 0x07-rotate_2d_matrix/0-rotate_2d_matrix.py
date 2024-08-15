@@ -1,10 +1,9 @@
 #!/usr/bin/python3
 """ rotate_2d_matrix module
 """
-from typing import List
 
 
-def rotate_2d_matrix(matrix: List[List[int]]) -> None:
+def rotate_2d_matrix(matrix: list[list[int]]) -> None:
     """ rotate a 2d square matrix 90 degrees clockwise.
 
     note: NxN matrix only
