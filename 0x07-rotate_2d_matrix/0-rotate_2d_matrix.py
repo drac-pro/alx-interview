@@ -3,13 +3,13 @@
 """
 
 
-def rotate_2d_matrix(matrix: list[list[int]]) -> None:
+def rotate_2d_matrix(matrix):
     """ rotate a 2d square matrix 90 degrees clockwise.
 
     note: NxN matrix only
 
     Args:
-        matrix (list): 2d square matrix to rotate
+        matrix (list[list[int]]): 2d square matrix to rotate
     """
     n = len(matrix)
     # transposes the matrix inplace
