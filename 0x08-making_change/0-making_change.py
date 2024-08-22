@@ -19,7 +19,7 @@ def makeChange(coins, total):
     coins.sort(reverse=True)
     num_coins = 0
     remaining_amount = total
-    
+
     for coin in coins:
         if remaining_amount == 0:
             break
