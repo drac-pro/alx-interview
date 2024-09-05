@@ -11,6 +11,9 @@ def isWinner(x, nums):
         x(int): number of rounds
         nums(list): an array of n
     """
+    if x is None or nums is None or x <= 0 or nums == []:
+        return None
+
     def sieve_of_eratosthenes(n):
         """ Helper returns a list of primes up to n
         using the Sieve of Eratosthenes
@@ -27,9 +30,6 @@ def isWinner(x, nums):
                 for j in range(i * i, n + 1, i):
                     sieve[j] = False
         return sieve
-
-    if x is None or nums is None or x == 0 or nums == []:
-        return None
 
     max_n = max(nums)
     prime_flags = sieve_of_eratosthenes(max_n)
