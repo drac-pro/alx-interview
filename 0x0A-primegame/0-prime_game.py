@@ -28,6 +28,9 @@ def isWinner(x, nums):
                     sieve[j] = False
         return sieve
 
+    if x is None or nums is None or x == 0 or nums == []:
+        return None
+
     max_n = max(nums)
     prime_flags = sieve_of_eratosthenes(max_n)
 
